@@ -1,53 +1,38 @@
 <html>
     <head>
-        <style>
-            .content{
-                width: 100%;
-                height: 100%;
-             }
-             .form-exemplo{
-                 width: 33%;
-
-             }
-
-             
-           
-        </style>
-        <title>HTML CSS</title>
-        <body>
-            <div class="contant">
-                <div class="form-exemplo">
-                    <div class="form- head">
-                        <div class="form- title">
-                            formulario de contato
-                        </div>
-                     </div>
-                        <div class="form-desc"> 
-                            preencha os campos a baixo para receber nossas novaslebres
-                        </div>
-                     <div class="form-body">
-                         <form action="indext.html" method="get"> 
-                             <input placeholder="NOME"  type="text" id="nome" name="nome">
-                             <input placeholder="TELEFONE"  type="tel" id="fone" name="fone">
-                             <input placeholder="E-MAIL"  type="email" id="e-mail" name="e-mail">
-                             <textarea placeholder="DESCRIÇAO"  type="text" id="desc" name="desc"></textarea>                            
-                             <label for="checkpoint">
-                              aceito os termos de uso   
-                             </label>
-
-                              <input type="checkbox" id="checkpoint" name="checkpoint">
-                                
-                             
-                         </form>
-                    </div>
-                    
-
-                 
-                    
-
-                </div>
-
-            </div>                                    
-        </body>
+        <title>Formul&aacute;rio de exemplo</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
+    <body>
+        <div class="content">
+            <div class="form-exemplo">
+                <div class="form-header">
+                    <div class="form-title">
+                        Formulário de contato
+                    </div>
+                    <div class="form-desc">
+                        Preencha os campos abaixo para receber nossa newsletter!
+                    </div>
+                </div>
+                <div class="form-body">
+                    <form action="index.html" method="GET">
+                        <input placeholder="Nome" type="text" id="name" name="name">
+                        <input placeholder="Telefone" id="phone" name="phone" type="tel">
+                        <input placeholder="E-mail" id="email" name="email" type="email">
+                        <textarea placeholder="Descrição" id="desc" name="desc" type="text"></textarea>
+                        <div class="terms-box">
+                            
+                            <label for="terms-and-services">
+                                Aceito os termos de uso
+                            </label>
+                            <input type="checkbox" id="terms-and-services" name="terms-and-services">
+                        </div>
+                        <div class="button-box">
+                            <button>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
